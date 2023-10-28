@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK RECORD</title>
+    <link rel="stylesheet" href="./popup.css">
+</head>
+<body>
+<div class="navbar">
+    <h1>BOOK RECORD</h1>
+</div>
+
+<div class="container">
+    <div class="bookcontainer">
+        <h2>Rich dad Poor dad</h2>
+        <h5>Rebecca bex</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero maiores esse sint in omnis temporibus earum odit. Vel, assumenda consectetur labore magni autem praesentium nam quo facere, nobis tenetur sed!</p>
+        <button onclick="del(event)">Delete</button>
+    </div>
+    
+</div>
+
+<div class="popup-overlay"></div>
+<div class="popup-box">
+    <h2>Add Book</h2>
+    <form>
+        <input type="text" id="booktitle" placeholder="Book Title">
+        <input type="text" id="bookauthor" placeholder="Book Author">
+        <textarea placeholder="Short Description" id="bookdescription"></textarea>
+        <button id="addbook">Add</button>
+        <button id="cancel" >Cancel</button>
+
+    </form>
+</div>
+
+<button class="addbtn" id="addpopup">+</button>
+
+<script src="./popup.js"></script>
+
+</body>
+</html>

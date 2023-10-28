@@ -1,0 +1,115 @@
+<!--<style>
+    *{
+        
+        background: radial-gradient(#d19898,#d39898);
+        box-sizing: border-box;
+    }
+    h1{
+        font-size: 70px;
+        text-shadow: 2px 2px 2px rgb(236, 222, 222);
+    }
+    .div1{
+        position: relative;
+        top: 30%;
+        left: 25%;
+        letter-spacing: 5px;
+    }
+    .div2{
+        position: relative;
+        top: 30%;
+        left: 4%;
+        
+    }  
+    .div4{
+        position: relative;
+        top: 30%;
+        left: 7%;
+        font-size: 20px;
+    }  
+    .btn{
+        font-size: 20px;
+        border: 2px  2px solid;
+        border-radius: 30px ;
+        padding: 10px;
+        background: white;
+
+    }
+    .btn1{
+        font-size: 20px;
+        border: 2px  2px solid;
+        border-radius: 30px ;
+        padding: 10px;
+        background: white;
+    }
+    #inputbox{
+        font-size: 20px;
+        border: 2px  2px solid white;
+        border-radius: 30px;
+        padding: 10px;
+        background: white;
+
+    }
+    
+    
+    
+
+</style>
+
+
+<div class="div1">
+<h1>To Do List</h1>
+    <div class="div2">
+        <input id="inputbox">
+        <button class="btn1" onclick="add()">Add</button>
+    </div>    
+        <div class="div4">
+            <ul id="listcontainer">
+                <li>Hello
+                    <button class="btn" onclick="dele(event)">delete</button>
+                </li>
+            </ul>
+        </div>
+
+</div>
+
+
+
+<script>
+    var ul = document.getElementById("listcontainer")
+    var input = document.getElementById("inputbox")
+    function add()
+
+    {
+        var  listitem = document.createElement("li")
+        listitem.innerHTML= input.value + "<button onclick='dele(event)''>Delete</button>"
+        ul.append(listitem)
+        
+    }
+    function dele(event)
+    {
+        event.target.parentElement.remove()
+    }
+</script>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="./ToDo.css">
+</head>
+<body>
+    <h1>My ToDo List</h1>
+    <div class="container">
+        <div id="newtask">
+            <input type="text" placeholder="Add Tasks">
+            <button id="push">Add</button>
+        </div>
+        <div id="tasks"></div>
+    
+    </div>
+
+    <script src="./ToDo.js"></script>
+</body>
+</html>

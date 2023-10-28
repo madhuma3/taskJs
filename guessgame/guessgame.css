@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.game{
+    position: absolute;
+    left: 29%;
+    bottom: 30%;
+    background: rgb(226, 87, 23);
+    border-radius: 60px 0px;
+}
+h1{
+    margin: 40px;
+    text-shadow: 2px 2px 2px rgb(116, 109, 109);
+    font-size: 50px;
+}
+#guesssnumber{
+    margin-left: 30%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    margin-left: 20px;
+    background: rgb(116, 196, 116);
+    font-size: 14px;
+}
+#result{
+    margin-left: 30%;
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#score{
+    margin-left: 30%;
+    padding: 8px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
